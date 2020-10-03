@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/deep_purple_100">
+    <item>
+        <selector>
+            <item
+                android:drawable="@drawable/normal_button_bg"
+                android:state_enabled="true" />
+            <item
+                android:drawable="@drawable/disabled_button_bg"
+                android:state_enabled="false" />
+            <item android:drawable="@drawable/normal_button_bg" />
+        </selector>
+    </item>
+</ripple>

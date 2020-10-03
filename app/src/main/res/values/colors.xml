@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/white</color>
+    <color name="colorPrimaryDark">@color/grey_300</color>
+    <color name="colorAccent">@color/deep_purple_500</color>
+    <color name="text_color_primary">#212121</color>
+    <color name="grey_50">#FAFAFA</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_700">#616161</color>
+    <color name="white">#FFFFFF</color>
+    <color name="deep_purple_100">#D1C4E9</color>
+    <color name="deep_purple_400">#7E57C2</color>
+    <color name="deep_purple_500">#673AB7</color>
+    <color name="deep_purple_800">#4527A0</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="red_500">#F44336</color>
+</resources>

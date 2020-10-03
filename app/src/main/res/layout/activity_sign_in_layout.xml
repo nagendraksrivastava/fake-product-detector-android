@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_just_toolbar"/>
+
+    <com.authentickart.detector.custom.AuthKartEditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        style="@style/EditTextStyleSingleLine"
+        android:layout_height="@dimen/dimen_48dp"
+        android:layout_marginTop="@dimen/dimen_48dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"/>
+
+    <com.authentickart.detector.custom.AuthKartEditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        style="@style/EditTextStyleSingleLine"
+        android:layout_height="@dimen/dimen_48dp"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:inputType="textPassword"
+        android:hint="@string/password"/>
+
+    <com.authentickart.detector.custom.AuthKartButton
+        android:id="@+id/btn_sign_in"
+        style="@style/ButtonStyleWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        app:font="@string/bold" />
+
+    <ProgressBar
+        android:id="@+id/pb_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+</LinearLayout>

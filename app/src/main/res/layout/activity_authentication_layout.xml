@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/authentication_toolbar"
+        layout="@layout/layout_just_toolbar" />
+
+    <com.authentickart.detector.custom.AuthKartTextView
+        android:id="@+id/tv_brand_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/authentication_toolbar"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:gravity="center"
+        android:textColor="@color/text_color_primary"
+        android:textSize="@dimen/text_size_18sp"
+        app:font="@string/medium"
+        tools:text="@string/brand_selection" />
+
+    <com.authentickart.detector.custom.AuthKartTextView
+        android:id="@+id/tv_authorization_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_brand_name"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:gravity="center"
+        android:text="@string/scan_description"
+        android:textColor="@color/grey_700"
+        android:textSize="@dimen/text_size_12sp"
+        app:font="@string/regular" />
+
+    <LinearLayout
+        android:id="@+id/ll_authenticity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_authorization_description"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_authenticity"
+            android:layout_width="@dimen/dimen_124dp"
+            android:layout_height="@dimen/dimen_124dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:src="@drawable/ic_tick_mark" />
+
+        <com.authentickart.detector.custom.AuthKartTextView
+            android:id="@+id/tv_authenticity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:gravity="center"
+            android:textColor="@color/deep_purple_500"
+            android:textSize="@dimen/text_size_20sp"
+            app:font="@string/medium"
+            tools:text="@string/product_authentic" />
+
+    </LinearLayout>
+
+    <com.authentickart.detector.custom.AuthKartButton
+        android:id="@+id/btn_scan_code"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:includeFontPadding="false"
+        android:text="@string/scan_my_product"
+        android:textAllCaps="false"
+        app:font="@string/bold" />
+
+    <ProgressBar
+        android:id="@+id/pb_product_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_scan_code"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:indeterminate="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
