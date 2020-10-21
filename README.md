@@ -1,10 +1,11 @@
 # fake-product-detector-android
 
-As the name suggest it detects the counterfit products by scanning teh bar code from the database and validate the authenticity of product. 
-Its an full fledged working Android application which was used to provide demo to multiple cleints but because of the lack of finacial funds we closed this idea. 
+As the name suggests it detects counterfeit products by scanning the bar code from the database and validate the authenticity of the product. 
+It’s a full-fledged working Android application that was used to provide a demo to multiple clients but because of the lack of financial funds, we closed this idea. 
 
-We have open source the code so that other can get benefited and if any etrprenuer is thinking to build the same they can take source code and use it as an MVP 
-without any obligations. It has been released on MIT license. Please read the below license before using the code.
+We have open-source the code so that others can get benefited and if any entrepreneur is thinking to build the same they can take source code and use it as an MVP 
+without any obligations. It has been released under an MIT license. Please read the below license before using the code.
+
 
 
 
